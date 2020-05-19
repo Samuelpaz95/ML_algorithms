@@ -18,6 +18,9 @@ def d_mse(features, _y, labels):
 
 ## Entrenamiento
 def train_step(model, features, labels, lr):
+    # y = w*x + b
+    # 2x (xw - d + b) / n
+    # 2x (y - d) / n
     _y = model(features)
     #print(d_mse(features, _y, labels))
     model.w = model.w - lr * d_mse(features, _y, labels)

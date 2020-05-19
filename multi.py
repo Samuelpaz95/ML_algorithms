@@ -1,5 +1,5 @@
 from matplotlib import pyplot as plt
-from modelos_AI import train, features, labels, Regresion, shuffle, mse
+from modelos_AI import train, features, labels, Regresion, shuffle, mse, np
 
 def graph(predictions, features, labels):
     plt.subplot(2,2,1)
@@ -72,3 +72,6 @@ predictions = model(test_inputs)
 graph(predictions, test_inputs, test_labels)
 
 print("Error en los datos de testing", mse(predictions, test_labels))
+
+np.save("weights", model.w)
+print("Model saved.")
