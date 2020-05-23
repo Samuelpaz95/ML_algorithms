@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-from modelos_AI.dataset import powers, labels, np
+from dataset import *
 from modelos_AI.regresion_simple import SimpleRegresion
 
 model = SimpleRegresion()

@@ -1,4 +1,8 @@
-from modelos_AI import Regresion, np, features
+import numpy as np
+
+print("Example")
+from dataset import features
+from modelos_AI import Regresion
 
 
 model = Regresion(4)
@@ -8,9 +12,6 @@ model.w = np.load('weights.npy')
 
 
 colums = ['Year: ', 'Mileage: ', 'Engine: ', 'Power: ', 'Price: ']
-print('Introduzca los datos de su auto, por ejemplo:')
-
-print(features)
 
 year = float(input(colums[0]))
 mileage = float(input(colums[1]))

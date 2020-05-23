@@ -4,7 +4,7 @@ class Regresion:
     
     def __init__(self, num_inputs):
         # Iniciaizamos los pesos como un array random de "num_inputs + 1" elementos
-        self.w = np.random.rand(num_inputs + 1)
+        self.w = np.random.rand(num_inputs + 1, 1)
         
     def predict(self, _inputs):
         # forma de los inputs:
@@ -24,8 +24,7 @@ class Regresion:
         #      .....   
         #  [x1,x2,...xn, 1]]
         
-        #return np.sum(self.w * _inputs, axis=1).reshape(-1,1)
-        return np.matmul(_inputs, self.w).reshape(-1,1)
+        return np.matmul(_inputs, self.w)
         
     def __call__(self, _inputs):
         """

@@ -1,5 +1,7 @@
 from matplotlib import pyplot as plt
-from modelos_AI import train, features, labels, Regresion, shuffle, mse, np
+from training import *
+from dataset import *
+from modelos_AI import Regresion
 
 def graph(predictions, features, labels):
     plt.subplot(2,2,1)

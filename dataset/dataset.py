@@ -13,7 +13,7 @@ dftrain = pd.read_csv('train-data.csv')
 colums = ['Year', 'Mileage', 'Engine', 'Power', 'Price']
 features = dftrain[colums]
 
-print(features)
+#print(features)
 
 # localizamos donde podria haber filas con valores nulos para quitarlos del dataset
 # de entrenamiento.
@@ -51,7 +51,7 @@ features = np.array(features).astype(np.float64)
 powers = features[:,3]
 
 # Imprimimos los primeros 5 elementos para visualizar
-print(features[:5])
+#print(features[:5])
 
 
 def shuffle(inputs, targets):
