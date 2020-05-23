@@ -80,7 +80,11 @@ La red neuronal se compone de una lisa de estas capas y  puede dar un resultando
 
 En el script clasificacion.py se crea este modelo y se entrena para clasificar una nuve de puntos de otras que la rodean como un anillo.
 
-De esta forma:
+```
+python clasification.py
+```
+
+Se mostrará el siguiente grafico:
 ![clasificacion](.github/Clasificacion.png)
 La primera gráfica de las predicciones se trata los resultados del modelo sin entrenar,
 la segunda de los resultados del modelo ya entrenado.
